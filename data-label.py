@@ -15,6 +15,8 @@ from app import App
 		# 	.npy
 		# P01_03.txt 
 
+#! TODO: SAVE PROGRESS - MARK WHICH IMAGE PAIRS HAVE BEEN CHECKED IN TXT FILE 
+
 if __name__ == "__main__":
     dataset_dir_path = "/Users/willisguo/EPIC-KITCHENS"
     annotations_dir_path = "/Users/willisguo/Desktop/data-label/EPIC-KITCHENS-ANNOTATIONS" 
