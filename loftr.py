@@ -9,7 +9,9 @@ def load_torch_image(fname):
   img = K.color.bgr_to_rgb(img)
   return img
 
-# TODO: use kornia or just pytorch 
+#! TODO: USE KORNIA OR PYTORCH
+#! TODO: BATCH INFERENCE? CURRENTLY ONE IMAGE PAIR AT A TIME
+
 def loftr_inference(matcher, fname0, fname1):
 	img0 = load_torch_image(fname0)
 	img1 = load_torch_image(fname1)
