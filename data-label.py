@@ -41,11 +41,6 @@ if __name__ == "__main__":
                     index = 0 
                     while index < len(lines):
                         line = lines[index].strip() 
-                        
-						# line marked with 'X' -> image pair has already been checked 
-                        if line[-1] == 'X': 
-                            index += 1
-                            continue 
 
                         img1, img2 = line.split('\t')
 
@@ -61,23 +56,5 @@ if __name__ == "__main__":
 
                         # print output
                         print(f'{img1} - {img2}') 
-                    
-                    #! TODO: how to get user to exit and save progress 
-                    # write to txt file to mark progress
-                    # with open(e2, 'w') as f:
-
-                    #     # i < index -> image pair has been checked
-                    #     for i in range(index):
-                    #         line = lines[i].strip() 
-                            
-                    #         if line[-1] != 'X':
-                    #             line = f'{line} X\n'
-                            
-                    #         f.write(line) 
-                        
-                    #     # i > index -> image pair has not been checked 
-                    #     for i in range(index, len(lines)):
-                    #         line = lines[i]
-                    #         f.write(line) 
 
                 
